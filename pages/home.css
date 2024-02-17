@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh; /* Alterado de height para min-height para garantir que o conteúdo seja exibido corretamente em telas pequenas */
+}
+
+#conectado {
+  margin-top: 2%; /* Reduzido o espaço superior */
+  font-weight: bold;
+}
+
+.container {
+  max-width: 90vw; /* Alterado para 90vw para evitar possíveis problemas de overflow */
+  text-align: center;
+  margin-top: 2%;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto; /* Garante que a altura da imagem seja ajustada proporcionalmente à largura */
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.grid-button-usuario {
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #030060;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px #5b58ff, 0 2px 4px -1px #5b58ff;
+  transition: all .6s ease;
+}
+
+.grid-button-usuario:hover {
+  box-shadow: 0 10px 15px -3px #5b58ff, 0 4px 6px -2px #5b58ff;
+}
+
+.grid-button-usuario:focus,
+.grid-button-usuario:active {
+  opacity: .85;
+  box-shadow: none;
+}
+
+.grid-button {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+  align-items: center; /* Adicionado para centralizar verticalmente */
+}
+
+.grid-button img {
+  width: 70%; /* Ajustado o tamanho da imagem */
+  margin-right: 10px; /* Adicionado espaço à direita da imagem */
+}
+
+.grid-button p {
+  font-size: 1.2rem; /* Reduzido o tamanho da fonte para melhorar a aparência em tamanhos menores de tela */
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+    flex-direction: row;
+  }
+
+  .logo {
+    max-width: 20%;
+  }
+
+  .button-group {
+    flex-direction: row;
+  }
+
+  a {
+    width: auto; /* Alterado para largura automática em telas maiores */
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    }
+
+    #botaoEditar{
+      display: flex;
+      position: relative;
+      justify-content: center;
+      padding: 1.3rem;
+      background-color: #030060;
+      color: #fff;
+      border: none;
+      border-radius: 0.8rem;
+      cursor: pointer;
+      transition: 0.5s ease-out;
+      overflow: visible;
+      margin-top: 1rem;
+    }
+
+    #botaoEditar a {
+      display: flex;
+      position: relative;
+      color: #fff;
+      text-decoration: none;
+    justify-content: center;
+  }
+    
+    #botaoEditar:hover {
+      background-color: #1b40af;
+      /* Cor do fundo ao passar o mouse */
+    }
+    
+
+    footer {
+      position: fixed;
+      display: block;
+      flex-direction: column;
+      width: 100%;
+      background-color: #030060;
+      color: #fff;
+      text-align: center;
+      bottom: 0;
+      overflow: auto;
+    }
+     /* Adicionado espaço horizontal entre os botões em telas maiores */
+  }
+
+
+.cabecalho {
+  display: flex; /* Alterado para flex para facilitar a centralização vertical */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2%; /* Adicionado espaço inferior para separar o cabeçalho do conteúdo principal */
+}
+
+#botaoEditar {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #030060;
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin-top: 1.5rem;
+}
+
+#botaoEditar a {
+  display: flex;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+justify-content: center;}
+
+#botaoEditar:hover {
+  background-color: #1b40af;
+  /* Cor do fundo ao passar o mouse */
+}
+
+footer {
+  position: fixed;
+  display: block;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #030060;
+  color: #fff;
+  text-align: center;
+  bottom: 0;
+  overflow: auto;
+}
+.copyright{
+  font-size: smaller;
+  row-gap: 0;
+}

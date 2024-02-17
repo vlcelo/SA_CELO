@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #E5E6E7;
+  background-repeat: no-repeat;
+  font-family: 'Open Sans', sans-serif;
+  zoom: 1.15;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid_header {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.titulo_usuario {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #030060;
+  margin-top: 6rem;
+}
+
+.relatorios, .perfil, .inicio, .novo_usuario, .voltar {
+  position: absolute;
+  top: 0;
+  padding: 0.8rem;
+  margin: 5px;
+  background-color: #030060;
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.relatorios a, .perfil a, .inicio a, .novo_usuario a, .conectado a, .voltar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.relatorios:hover, .perfil:hover, .inicio:hover, .novo_usuario:hover, .voltar:hover {
+  background-color: #1b40af;
+}
+
+.inicio {
+  margin-top: 2rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #030060;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.novo_usuario {
+  left: 0;
+}
+
+.conectado {  
+  margin: 5px;
+  background-color: #030060;
+  color: #fff;
+  position: absolute;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.8rem;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  top: 0;
+  right: 0;
+}
+
+
+
+#sem-relatorio {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  margin-top: 6rem;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #030060;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+#container-relatorios {
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: 3%;
+}
+
+#relatorio {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #fff;
+  max-width: 85%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+#id-atendente {
+  margin: auto;
+  font-weight: bold;
+  color: #030060;
+  padding: 3%;
+}
+
+#info-atendente {
+  margin: auto;
+  padding: 5%;
+}
+
+#botao-editar {
+  margin: auto;
+  font-weight: bold;
+  color: #030060;
+  padding: 5%;
+}
+
+.botao {
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: #030060;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.botao:hover {
+  background-color: #1b40af;
+}
+
+.form-caixa {
+  background-color: #fff;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+
+.table table-striped {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+.perfil {
+  color: #030060;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+  align-items: center;
+}
+
+.perfil p {
+  width: 100%;
+}
+
+#info {
+  font-weight: normal;
+}
+
+#nome {
+  color: #030060;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.texto {
+  color: #030060;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.text-table-style {
+  color: #030060;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+td{
+  padding: 0.5rem;
+}
+
+.editar{
+  position: static;
+  top: 0;
+  padding: 0.4rem;
+  margin: 5px;
+  background-color: #030060;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+
+.editar:hover {
+  background-color: #1b40af; /* Cor do fundo ao passar o mouse */
+}
